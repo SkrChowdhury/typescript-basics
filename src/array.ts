@@ -3,4 +3,4 @@ const rollNumbers: number[] =[12,123,345]
 
 const newArray = ["Abul", "Kabul", 123, true]
 
-const user: [number,string]=[234,"Mezba"] //Tuple
+const user1: [number,string]=[234,"Mezba"] //Tuple

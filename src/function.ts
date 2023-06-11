@@ -8,15 +8,30 @@ add(3);
 //Spread Operator
 const myFriends = ['chandler', 'joey', 'ross']
 const newFriends = ['monica', 'rachel', 'pheobe']
+const myBestFriend = {
+  fullname: 'Abul Bashar',
+  age: 24
+}
 myFriends.push(...newFriends);
 console.log(myFriends)
 
+// Array and Object destructuring
 
-//rest Parameter
+const [bestfriend] = myFriends;
+const {fullname} = myBestFriend;
 
-const greetFriends = (friend1: string,friend2: string,friend3: string):void => console.log(`Hi ${friend1}`)
 
-const addArrow = (num1: number, num2: number): number => num1 + num2;
+
+//Rest Parameter
+
+const greetFriends = (...myFriends:string[]):void => myFriends.forEach((friend) => console.log(`Hi ${friend}`));
+
+greetFriends('hashem','kashem','gashem', 'Bangla Bhai', 'English Bhai')
+
+
+
+
+const addArrow = (num1: number = 30, num2: number): number => num1 + num2;
 addArrow(2, 5);
 
 const arr = [1, 4, 5];
